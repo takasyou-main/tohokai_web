@@ -167,7 +167,7 @@ h3,h4,h5,h6 { margin-top: 3em; }
   line-height: 1.5em;
   margin-bottom: 0.5em;
 }
-
+/* 活動内容行事カレンダーの記述 */
 p.semester {
     font-size:110%;
 }
