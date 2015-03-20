@@ -168,6 +168,15 @@ h3,h4,h5,h6 { margin-top: 3em; }
   margin-bottom: 0.5em;
 }
 
+p.semester {
+    font-size:110%;
+}
+    
+ul.activity {
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
 /* -------------------------------------------------------------
    [4] サイドバーブロック内に関する指定 */
 

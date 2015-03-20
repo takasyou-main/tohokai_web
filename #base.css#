@@ -1,0 +1,239 @@
+@charset "shift_jis";
+
+/* -------------------------------------------------------------
+
+[1] レイアウトに関する指定
+[2] ヘッダーブロック内に関する指定
+[3] コンテンツブロック内に関する指定
+[4] サイドバーブロック内に関する指定
+[5] フッターブロック内に関する指定
+[6] CSSデザインサンプルリンク指定
+
+----------------------------------------------------------------
+CSSデザインサンプ [ URL ] http://www.css-designsample.com
+------------------------------------------------------------- */
+
+
+/* 一括で全ての要素の余白をゼロに指定 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 全体的なリンク */
+
+a:link,
+a:visited,
+a:hover,
+a:active { text-decoration: underline; }
+
+a:link { color: #00f; }
+a:visited { color: #90f; }
+a:hover { color: #f00; }
+a:active { color: #f00; }
+
+/* -------------------------------------------------------------
+   [1] レイアウトに関する指定 */
+
+body {
+  font-size: 85%;
+  text-align: center;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #eee;
+}
+
+#wrapper {
+  text-align: left;
+  width: 800px;
+  margin: 20px auto;
+  border: 1px solid #333;
+  background-color: #fff;
+}
+
+#header {
+  width: 100%;
+  height: 240px;
+  margin-bottom: 20px;
+  position: relative;
+  background: url(img/bg-header3.png) no-repeat 0 0;
+}
+
+#container {
+  margin-bottom: 40px;
+  padding: 20px 0 0;
+  background: url(img/bg-container.jpg) repeat-y 100% 0;
+}
+
+#contents {
+  width: 540px;
+  float: left;
+  padding: 0 40px 0 20px;
+}
+
+#sidebar {
+  width: 185px;
+  float: right;
+  padding: 0 10px 0 5px;
+}
+
+#footer {
+  padding: 20px 0 30px;
+  background: #333;
+}
+
+/* -------------------------------------------------------------
+   [2] ヘッダーブロック内に関する指定 */
+
+/* キーワード */
+h1 {
+  font-size: 100%;
+  font-weight: normal;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+/* 企業名｜ショップ名｜タイトル */
+.logo {
+  font-size: 160%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #000;
+}
+
+.logo a:hover {
+  text-decoration: none;
+  color: #f00;
+}
+
+/* ページの概要 */
+.description {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+
+/* グローバルナビゲーション */
+#globalnavi {
+  list-style-type: none;
+  width: 800px;
+  height: 28px;
+  padding-top: 12px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #333;
+}
+
+#globalnavi li { display: inline; }
+
+#globalnavi a {
+  text-decoration: none;
+  padding: 0 5px 0 15px;
+  background: url(img/mark.gif) no-repeat 0 50%;
+  color: #eee;
+}
+
+#globalnavi li a:hover {
+  background: url(img/mark.gif) no-repeat -400px 50%;
+  color: #09f;
+}
+
+/* -------------------------------------------------------------
+   [3] コンテンツブロック内に関する指定 */
+
+/* 見出し */
+h2,h3,h4,h5,h6 {
+  font-size: 120%;
+  font-weight: normal;
+  height: 30px;
+  margin-bottom: 1em;
+  padding: 10px 0 0 10px;
+  background: url(img/bg-h.jpg) no-repeat 0 0;
+}
+
+h3,h4,h5,h6 { margin-top: 3em; }
+
+/* 文字 */
+#contents p {
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+}
+/* 活動内容行事カレンダーの記述 */
+p.semester {
+    font-size:110%;
+}
+    
+ul.activity {
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+/* -------------------------------------------------------------
+   [4] サイドバーブロック内に関する指定 */
+
+/* サイドバータイトル */
+.side-title {
+  margin-bottom: 0;
+  padding-bottom: 2px;
+}
+
+/* サイドバーメニュー */
+.localnavi {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+.localnavi li { display: inline; }
+
+.localnavi li a {
+  text-decoration: none;
+  width: 175px;
+  padding: 4px 4px;
+  display: block;
+  border: 1px outset #fff;
+  background-color: #eee;
+  color: #333;
+}
+
+.localnavi li a:hover {
+  text-decoration: none;
+  border: 1px outset #fff;
+  background-color: #666;
+  color: #fff;
+}
+
+/* -------------------------------------------------------------
+   [5] フッターブロック内に関する指定 */
+
+#footer p {
+  color: #fff;
+  text-align: center;
+}
+
+/* -------------------------------------------------------------
+   [6] CSSデザインサンプルリンク指定 */
+
+#cds {
+  font-size: 80%;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  text-align: right;
+  margin: 0;
+  padding-right: 10px;
+  clear: both;
+}
+
+#cds,
+#cds a,
+#cds a:hover {
+  text-decoration: none;
+  color: #999;
+}
